@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notification View Controller-->
+        <scene sceneID="ZUR-8f-zEH">
+            <objects>
+                <viewController storyboardIdentifier="NotificationStoryBoard" id="kbO-OK-4YD" customClass="NotificationViewController" customModule="ContactBookSmart_1_0_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9sf-ie-DAg"/>
+                        <viewControllerLayoutGuide type="bottom" id="XVV-5K-Qrz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JAS-r8-ly9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="WZB-jN-iYb">
+                                <rect key="frame" x="50" y="94" width="275" height="29"/>
+                                <segments>
+                                    <segment title="Chưa xem"/>
+                                    <segment title="Đã xem"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControlActionWithSender:" destination="kbO-OK-4YD" eventType="valueChanged" id="RMD-xl-ZC2"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3vg-re-Vkn">
+                                <rect key="frame" x="10" y="142" width="355" height="525"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellIdNotification" rowHeight="85" id="A8Q-TL-MlC" customClass="NotificationTableViewCell" customModule="ContactBookSmart_1_0_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="355" height="85"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A8Q-TL-MlC" id="Kni-4F-r0t">
+                                            <rect key="frame" x="0.0" y="0.0" width="355" height="85"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girl" translatesAutoresizingMaskIntoConstraints="NO" id="6xP-7d-N9q">
+                                                    <rect key="frame" x="5" y="5" width="75" height="75"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="75" id="mEE-rE-Jj8"/>
+                                                        <constraint firstAttribute="width" secondItem="6xP-7d-N9q" secondAttribute="height" multiplier="1:1" id="zzH-P0-98x"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fwx-KY-Fdx">
+                                                    <rect key="frame" x="95" y="5" width="245" height="69.5"/>
+                                                    <string key="text">sdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdf</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Fwx-KY-Fdx" secondAttribute="bottom" constant="10" id="515-s3-aye"/>
+                                                <constraint firstItem="Fwx-KY-Fdx" firstAttribute="top" secondItem="Kni-4F-r0t" secondAttribute="top" constant="5" id="ABa-Xw-ovf"/>
+                                                <constraint firstItem="Fwx-KY-Fdx" firstAttribute="leading" secondItem="6xP-7d-N9q" secondAttribute="trailing" constant="15" id="ANm-Cf-9Nd"/>
+                                                <constraint firstItem="6xP-7d-N9q" firstAttribute="top" secondItem="Kni-4F-r0t" secondAttribute="top" constant="5" id="O2q-LZ-LIM"/>
+                                                <constraint firstItem="6xP-7d-N9q" firstAttribute="leading" secondItem="Kni-4F-r0t" secondAttribute="leading" constant="5" id="jNt-G4-i5y"/>
+                                                <constraint firstAttribute="trailing" secondItem="Fwx-KY-Fdx" secondAttribute="trailing" constant="15" id="sPM-0M-l9v"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageView" destination="6xP-7d-N9q" id="bVU-5J-GYD"/>
+                                            <outlet property="imgNotify" destination="6xP-7d-N9q" id="hte-FQ-M5b"/>
+                                            <outlet property="lblDescriptions" destination="Fwx-KY-Fdx" id="UwM-fQ-s0d"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gyv-Bh-bUX">
+                                <rect key="frame" x="0.0" y="30" width="375" height="44"/>
+                                <color key="barTintColor" red="0.99287766218185425" green="0.99536758661270142" blue="0.99207991361618042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem title="Thông Báo" id="9qk-QI-Nqc">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="l6h-fl-AOj">
+                                            <color key="tintColor" red="1" green="0.049691020330000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <segue destination="ESV-mf-qbG" kind="unwind" identifier="NotificationBackToBaseView" unwindAction="unwindToMainViewControllerFor:" id="zLy-xi-7QB"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WZB-jN-iYb" secondAttribute="trailing" constant="50" id="1pN-uN-msC"/>
+                            <constraint firstAttribute="trailing" secondItem="gyv-Bh-bUX" secondAttribute="trailing" id="2O9-d5-TOs"/>
+                            <constraint firstItem="3vg-re-Vkn" firstAttribute="top" secondItem="WZB-jN-iYb" secondAttribute="bottom" constant="20" id="2bS-0R-y4u"/>
+                            <constraint firstItem="WZB-jN-iYb" firstAttribute="leading" secondItem="JAS-r8-ly9" secondAttribute="leading" constant="50" id="Aax-Kp-asQ"/>
+                            <constraint firstAttribute="trailing" secondItem="3vg-re-Vkn" secondAttribute="trailing" constant="10" id="Bt0-V7-P0d"/>
+                            <constraint firstItem="3vg-re-Vkn" firstAttribute="leading" secondItem="JAS-r8-ly9" secondAttribute="leading" constant="10" id="M9F-Mc-nOu"/>
+                            <constraint firstItem="XVV-5K-Qrz" firstAttribute="top" secondItem="3vg-re-Vkn" secondAttribute="bottom" id="QDu-S4-ZdX"/>
+                            <constraint firstItem="WZB-jN-iYb" firstAttribute="top" secondItem="9sf-ie-DAg" secondAttribute="bottom" constant="60" id="fPt-e8-Zef"/>
+                            <constraint firstItem="gyv-Bh-bUX" firstAttribute="leading" secondItem="JAS-r8-ly9" secondAttribute="leading" id="gxs-31-wwE"/>
+                            <constraint firstItem="WZB-jN-iYb" firstAttribute="top" secondItem="gyv-Bh-bUX" secondAttribute="bottom" constant="20" id="v4x-ym-nOD"/>
+                            <constraint firstItem="gyv-Bh-bUX" firstAttribute="top" secondItem="JAS-r8-ly9" secondAttribute="top" id="v8l-u0-q3u"/>
+                            <constraint firstItem="gyv-Bh-bUX" firstAttribute="top" secondItem="JAS-r8-ly9" secondAttribute="top" constant="30" id="wdh-fk-LXS"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="v8l-u0-q3u"/>
+                                <exclude reference="fPt-e8-Zef"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="segmentControl" destination="WZB-jN-iYb" id="y6s-Jg-TdC"/>
+                        <outlet property="tableView" destination="3vg-re-Vkn" id="bXE-GW-gDo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zsm-ja-S2Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ESV-mf-qbG" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-926" y="-428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="girl" width="1024" height="768"/>
+    </resources>
+</document>

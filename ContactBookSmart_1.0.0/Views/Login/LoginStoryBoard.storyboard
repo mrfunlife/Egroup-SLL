@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KfZ-rK-mjw">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="hkV-xP-azV">
+            <objects>
+                <viewController id="KfZ-rK-mjw" customClass="LoginViewController" customModule="ContactBookSmart_1_0_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1s7-nP-fvG"/>
+                        <viewControllerLayoutGuide type="bottom" id="54Z-4U-vva"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="R1G-6K-Py2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="night-stars-wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="KbS-iR-sQB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="4Tg-Ae-tpR">
+                                <rect key="frame" x="40" y="244" width="295" height="179"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LJS-gx-6Gy">
+                                        <rect key="frame" x="0.0" y="0.0" width="295" height="108"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="ZPd-no-lpx">
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="44"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ldy-Gk-00I" customClass="FloatLabelTextField" customModule="ContactBookSmart_1_0_0" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="295" height="40"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <color key="tintColor" red="0.99847554309999997" green="1" blue="0.99132603789999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="XNk-qD-MGX"/>
+                                                        </constraints>
+                                                        <color key="textColor" red="0.99287766218185425" green="0.99536758661270142" blue="0.99207991361618042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="hintYPadding">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                                <color key="value" red="0.99847554309999997" green="1" blue="0.99132603789999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleTextColour">
+                                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleActiveTextColour">
+                                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AB4-p4-sml">
+                                                        <rect key="frame" x="0.0" y="43" width="295" height="1"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="0.5" id="FHn-2A-0v2"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Irl-5M-6bL">
+                                                <rect key="frame" x="0.0" y="64" width="295" height="44"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aUK-Dt-b9G" customClass="FloatLabelTextField" customModule="ContactBookSmart_1_0_0" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="295" height="40"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <color key="tintColor" red="0.99847554309999997" green="1" blue="0.99132603789999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="Bzc-ao-ah0"/>
+                                                        </constraints>
+                                                        <color key="textColor" red="0.99287766218185425" green="0.99536758661270142" blue="0.99207991361618042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="hintYPadding">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                                <color key="value" red="0.99847554309999997" green="1" blue="0.99132603789999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleTextColour">
+                                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleActiveTextColour">
+                                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sRd-4w-aBN">
+                                                        <rect key="frame" x="0.0" y="43" width="295" height="1"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="0.5" id="cmw-kZ-1WF"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P38-4c-6Yh" customClass="RoundedButton" customModule="ContactBookSmart_1_0_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="148" width="295" height="31"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="0.99847554309999997" green="1" blue="0.99132603789999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnLogin" destination="KfZ-rK-mjw" eventType="touchUpInside" id="1eK-it-eG2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login With" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anB-JI-6x3">
+                                <rect key="frame" x="20" y="458" width="335" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.99287766218185425" green="0.99536758661270142" blue="0.99207991361618042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bản quyền thuộc về VNEdutech 2017" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uM-9g-oNK">
+                                <rect key="frame" x="20" y="633.5" width="335" height="13.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                <color key="textColor" red="0.99847554309999997" green="1" blue="0.99132603789999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="RIk-iC-8Ce">
+                                <rect key="frame" x="67.5" y="500" width="240" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fi-Qm-V07" customClass="RoundedButton" customModule="ContactBookSmart_1_0_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="E1K-Qi-Nut"/>
+                                            <constraint firstAttribute="height" constant="30" id="nct-Ne-BwO"/>
+                                        </constraints>
+                                        <state key="normal" image="facebook-icon"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="13"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2i7-Xu-Alw" customClass="RoundedButton" customModule="ContactBookSmart_1_0_0" customModuleProvider="target">
+                                        <rect key="frame" x="140" y="0.0" width="100" height="30"/>
+                                        <color key="backgroundColor" red="0.11117252785132903" green="0.78119441524560229" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="twitter-icon"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="13"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logon_demo" translatesAutoresizingMaskIntoConstraints="NO" id="NNP-7j-N1r">
+                                <rect key="frame" x="137.5" y="83.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="VOv-Xa-L6o"/>
+                                    <constraint firstAttribute="height" constant="100" id="l6d-A8-Ye5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SỔ LIÊN LẠC ĐIỆN TỬ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWY-cx-J9L">
+                                <rect key="frame" x="99.5" y="203.5" width="176.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.99287766218185425" green="0.99536758661270142" blue="0.99207991361618042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99287766218185425" green="0.99536758661270142" blue="0.99207991361618042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NNP-7j-N1r" firstAttribute="centerX" secondItem="R1G-6K-Py2" secondAttribute="centerX" id="02D-ib-HrO"/>
+                            <constraint firstItem="4Tg-Ae-tpR" firstAttribute="centerX" secondItem="R1G-6K-Py2" secondAttribute="centerX" id="28d-hl-naz"/>
+                            <constraint firstAttribute="trailing" secondItem="anB-JI-6x3" secondAttribute="trailing" constant="20" id="5Jp-dN-CON"/>
+                            <constraint firstItem="4Tg-Ae-tpR" firstAttribute="top" secondItem="VWY-cx-J9L" secondAttribute="bottom" constant="20" id="AXD-fT-okd"/>
+                            <constraint firstItem="KbS-iR-sQB" firstAttribute="top" secondItem="R1G-6K-Py2" secondAttribute="top" id="FUd-2b-2oC"/>
+                            <constraint firstItem="RIk-iC-8Ce" firstAttribute="top" secondItem="anB-JI-6x3" secondAttribute="bottom" constant="25" id="IDa-ai-Vuc"/>
+                            <constraint firstItem="anB-JI-6x3" firstAttribute="leading" secondItem="R1G-6K-Py2" secondAttribute="leading" constant="20" id="PgR-Lm-0QQ"/>
+                            <constraint firstItem="VWY-cx-J9L" firstAttribute="top" secondItem="NNP-7j-N1r" secondAttribute="bottom" constant="20" id="VYm-lT-Lu8"/>
+                            <constraint firstAttribute="bottom" secondItem="KbS-iR-sQB" secondAttribute="bottom" id="XdZ-0b-ldk"/>
+                            <constraint firstItem="RIk-iC-8Ce" firstAttribute="centerX" secondItem="R1G-6K-Py2" secondAttribute="centerX" id="Ymx-Gv-Itb"/>
+                            <constraint firstAttribute="trailing" secondItem="KbS-iR-sQB" secondAttribute="trailing" id="ZR7-4y-Gaa"/>
+                            <constraint firstItem="4Tg-Ae-tpR" firstAttribute="centerY" secondItem="R1G-6K-Py2" secondAttribute="centerY" id="bqb-H5-Kwa"/>
+                            <constraint firstItem="54Z-4U-vva" firstAttribute="top" secondItem="9uM-9g-oNK" secondAttribute="bottom" constant="20" id="g6i-Sk-Q9A"/>
+                            <constraint firstItem="VWY-cx-J9L" firstAttribute="centerX" secondItem="R1G-6K-Py2" secondAttribute="centerX" id="gVh-d0-Hm1"/>
+                            <constraint firstAttribute="trailing" secondItem="4Tg-Ae-tpR" secondAttribute="trailing" constant="40" id="jYY-0Y-Ne5"/>
+                            <constraint firstItem="KbS-iR-sQB" firstAttribute="leading" secondItem="R1G-6K-Py2" secondAttribute="leading" id="lnZ-5Y-1S3"/>
+                            <constraint firstAttribute="trailing" secondItem="9uM-9g-oNK" secondAttribute="trailing" constant="20" id="tUh-RV-1NT"/>
+                            <constraint firstItem="anB-JI-6x3" firstAttribute="top" secondItem="4Tg-Ae-tpR" secondAttribute="bottom" constant="35" id="uAx-V4-yIC"/>
+                            <constraint firstItem="4Tg-Ae-tpR" firstAttribute="leading" secondItem="R1G-6K-Py2" secondAttribute="leading" constant="40" id="v8J-C6-nLu"/>
+                            <constraint firstItem="9uM-9g-oNK" firstAttribute="leading" secondItem="R1G-6K-Py2" secondAttribute="leading" constant="20" id="w8b-Jn-Hb0"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="28d-hl-naz"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ew-jN-VOR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="164.16791604197903"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="facebook-icon" width="17" height="17"/>
+        <image name="logon_demo" width="459" height="504"/>
+        <image name="night-stars-wallpaper" width="320" height="568"/>
+        <image name="twitter-icon" width="17" height="17"/>
+    </resources>
+</document>
